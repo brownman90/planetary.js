@@ -1,3 +1,26 @@
+v1.1.0 (2014/02/03)
+-------------------
+
+**Core**
+
+* Add `stop` method
+* Add `onStop` hooks
+
+v1.0.3 (2014/01/23)
+-------------------
+
+* Don't disable adaptive resampling on the projection
+
+v1.0.2 (2014/01/16)
+-------------------
+
+* Update version dependencies for D3 and TopoJSON
+
+v1.0.1 (2013/01/02)
+-------------------
+
+* Add D3 and TopoJSON as dependencies in `package.json`
+
 v1.0.0 (2013/12/31)
 -------------------
 

@@ -64,7 +64,7 @@ requirejs(['planetaryjs'], function(planetaryjs) {
 CommonJS
 --------
 
-First, install `browserify` and `brfs` from npm (as well as `planetary.js`, if you haven't already). Then, create your application (here referred to as `app.js`) and bundle it with browserify, running the dependencies through brfs.
+First, install `browserify` from npm (as well as `planetary.js` v1.0.2+, if you haven't already). Then, create your application (here referred to as `app.js`) and bundle it with browserify.
 
 <div class='ui raised segment'>
 <div class='ui red ribbon label'>JavaScript</div>
@@ -80,9 +80,18 @@ planet.draw(canvas);
 <div class='ui purple ribbon label'>Shell</div>
 
 ```shell
-$ npm install browserify brfs
-$ ./node_modules/.bin/browserify --g brfs app.js > bundle.js
+$ npm install browserify
+$ ./node_modules/.bin/browserify app.js > bundle.js
 ```
 </div>
 
-`bundle.js` is now ready to use!
+`bundle.js` is now ready to use! You may need to set the `charset` option on your script tag:
+
+
+<div class='ui raised segment'>
+<div class='ui blue ribbon label'>HTML</div>
+
+```html
+<script type='text/javascript' src='bundle.js' charset='utf-8'></script>
+```
+</div>
